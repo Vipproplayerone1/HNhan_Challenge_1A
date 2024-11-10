@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw and Save</title>
+    <style>
+        #canvas {
+            border: 1px solid black;
+            cursor: crosshair;
+            background-color: white; /* Đặt nền trắng để tránh ảnh đen */
+        }
+    </style>
+</head>
+<body>
+    <h1>Draw a Digit</h1>
+    <canvas id="canvas" width="200" height="200"></canvas>
+    <br>
+    <button onclick="clearCanvas()">Clear</button>
+    <button onclick="saveImage('0')">Save as 0</button>
+    <button onclick="saveImage('3')">Save as 3</button>
+
+    <script src="/static/canvas.js"></script>
+</body>
+</html>
